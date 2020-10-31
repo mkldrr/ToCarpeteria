@@ -10,7 +10,7 @@ import java.util.Map;
 @Component
 public class Carpettx implements Carpet {
 
-    City city;
+
 
     @Value("#{${TX}}")
     private Map<String,Integer> txUnitPrices;
@@ -20,7 +20,7 @@ public class Carpettx implements Carpet {
 
 
     @Override
-    public int getCarpetUnitPrice() {
+    public double getCarpetUnitPrice(City city) {
 
         return txUnitPrices.get(city);
 

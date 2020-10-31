@@ -10,13 +10,13 @@ import java.util.Map;
 @Component
 public class Carpetva implements Carpet {
 
-    City city;
+
     @Value("#{${VA}}")
     private Map<String,Integer> vaUnitPrices;
 
 
     @Override
-    public int getCarpetUnitPrice() {
+    public double getCarpetUnitPrice( City city) {
 
         return vaUnitPrices.get(city);
 

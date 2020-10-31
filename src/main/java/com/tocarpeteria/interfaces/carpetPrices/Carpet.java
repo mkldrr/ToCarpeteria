@@ -5,7 +5,7 @@ import com.tocarpeteria.enums.City;
 public interface Carpet {
 
 
-    int getCarpetUnitPrice();
+    double getCarpetUnitPrice(City city);
 
 
 
