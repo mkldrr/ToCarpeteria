@@ -5,7 +5,7 @@ import com.tocarpeteria.interfaces.carpetPrices.Carpet;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
+
 import java.util.Map;
 @Component
 public class Carpettx implements Carpet {
@@ -18,8 +18,9 @@ public class Carpettx implements Carpet {
 
 
 
+
     @Override
-    public int getCarpetPrice() {
+    public int getCarpetUnitPrice() {
 
         return txUnitPrices.get(city);
 

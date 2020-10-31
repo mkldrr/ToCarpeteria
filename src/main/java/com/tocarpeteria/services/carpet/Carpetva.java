@@ -16,7 +16,7 @@ public class Carpetva implements Carpet {
 
 
     @Override
-    public int getCarpetPrice() {
+    public int getCarpetUnitPrice() {
 
         return vaUnitPrices.get(city);
 
